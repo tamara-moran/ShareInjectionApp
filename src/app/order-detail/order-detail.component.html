@@ -1,0 +1,21 @@
+<div class="content" role="main">
+    <h2>Service injection for sharing data using service classes.</h2>
+    <p>Product Detail Page.</p>
+    <br><br>
+    <table cellpadding="10" cellspacing="10">
+     <thead>
+     <tr>
+       <td><b>Year </b></td>
+       <td><b> Amount </b></td>
+       <td><b> Quantity </b></td>
+     </tr>
+     </thead>
+     <tbody>
+     <tr *ngFor="let order of orderDetail[id]">
+       <td> {{order.year}}</td>
+       <td> {{order.amount}}</td>
+       <td> {{order.units}}</td>
+     </tr>
+     </tbody>
+    </table>
+    </div>
